@@ -1,0 +1,28 @@
+{
+	"name": "three-elements",
+	"version": "1.0.0",
+	"description": "Custom Elements for ThreeJs",
+	"keywords": [
+		"threejs",
+		"3d",
+		"graphic"
+	],
+	"main": "build/Three.min.js",
+	"types": "build/Three.d.ts",
+	"scripts": {
+		"dev": "webpack serve --open --mode development",
+		"build": "webpack --mode production"
+	},
+	"author": "Morgan Caron",
+	"license": "ISC",
+	"devDependencies": {
+		"webpack-config-generator": "^1.0.18"
+	},
+	"dependencies": {
+		"@types/stats.js": "^0.17.0",
+		"@types/three": "^0.126.2",
+		"customelementts": "git+https://github.com/MorganCaron/CustomElementTs.git",
+		"stats.js": "^0.17.0",
+		"three": "^0.126.1"
+	}
+}
