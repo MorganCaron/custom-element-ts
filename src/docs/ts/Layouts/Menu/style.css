@@ -1,0 +1,11 @@
+app-menu ul {
+	padding-left: 0;
+	text-align: center;
+}
+
+app-menu li {
+	display: inline;
+	margin: 0 .25em .5em .25em;
+	padding: .1em .2em;
+	list-style-type: none;
+}

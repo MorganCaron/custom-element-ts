@@ -1,0 +1,47 @@
+@import nootstrap
+
+\+scrollbar(.75rem, darkcyan, #1d1f21)
+
+\:root
+	--default-bg-color: white
+	--default-color: black
+	--muted-bg-color: #1d1f21
+	--muted-color: white
+
+body
+	background-color: #111
+	color: white
+
+h1, h2
+	white-space: nowrap
+
+h1
+	font-size: 3rem
+
+h2
+	font-size: 1.5rem
+
+a, a:hover
+	color: currentcolor
+
+app-menu li
+	+highlight-hover(white)
+	&:hover
+		color: black
+
+p > a
+	+underline-hover(white)
+	@extend .underlined
+
+li
+	margin-bottom: .5rem
+
+li > a::before
+	content: "⯈ "
+
+[class*="tilt-"]
+	padding: 0 .5em
+	background-color: rgba(white, .7)
+	color: #111
+	> h2
+		margin: .2em 0

@@ -1,0 +1,29 @@
+demo-flip {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+demo-flip img {
+	opacity: 1;
+	transition: opacity .5s;
+	transition-timing-function: ease-in-out;
+	width: 100%;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+	cursor: grab;
+}
+
+demo-flip img.grabbed {
+	position: absolute;
+	z-index: 1;
+	width: 100px;
+	height: 100px;
+	opacity: .7;
+	pointer-events: none;
+}
