@@ -19,6 +19,7 @@ export class DemoFlip extends HTMLElement {
 			if (node instanceof HTMLElement) {
 				const element = node as HTMLElement
 				element.addEventListener('mousedown', (event: MouseEvent) => {
+					event.preventDefault()
 					this.grab(element, event)
 				})
 				element.addEventListener('mouseup', () => {

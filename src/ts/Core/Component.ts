@@ -4,6 +4,7 @@ import { Type, recordToArray, flatify } from './Utils'
 export interface ComponentParameters {
 	selector: string
 	classes?: string
+	attributes?: object
 	extends?: string
 	template?: string
 	style?: string
@@ -27,6 +28,9 @@ export const Component = (config: ComponentParameters) => {
 			this.innerHTML = ''
 			if (config.classes)
 				this.setAttribute('class', config.classes)
+			if (config.attributes)
+				for (const [key, value] of Object.entries(config.attributes))
+					this.setAttribute(key, value);
 			const clone = document.importNode(template.content, true)
 			if (config.useShadow)
 				this.attachShadow({ mode: 'open' }).appendChild(clone)
