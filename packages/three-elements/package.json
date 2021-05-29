@@ -16,7 +16,7 @@
 	"author": "Morgan Caron",
 	"license": "ISC",
 	"devDependencies": {
-		"webpack-config-generator": "^1.0.18"
+		"webpack-config-generator": "^1.0.22"
 	},
 	"dependencies": {
 		"@types/stats.js": "^0.17.0",
