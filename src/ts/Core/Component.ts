@@ -7,6 +7,7 @@ export interface ComponentParameters {
 	attributes?: object
 	extends?: string
 	template?: string
+	removeContent?: boolean
 	style?: string
 	useShadow?: boolean
 }
@@ -22,10 +23,11 @@ export const Component = (config: ComponentParameters) => {
 	return <T extends Type<HTMLElement>>(component: T) => {
 		const template = createTemplate(config.template, config.style)
 
-		const init = component.prototype.init ?? function() { }
+		const connected = component.prototype.connected ?? function() { }
 		component.prototype.connectedCallback = function() {
 			this.baseContent = this.innerHTML
-			this.innerHTML = ''
+			if (config.removeContent)
+				this.innerHTML = ''
 			if (config.classes)
 				this.setAttribute('class', config.classes)
 			if (config.attributes)
@@ -37,7 +39,7 @@ export const Component = (config: ComponentParameters) => {
 			else
 				this.appendChild(clone)
 			this.constructor.__variables__ = findVariablesInHTMLElement(this)
-			init.call(this)
+			connected.call(this)
 			this.constructor.__isInitialized__ = true
 			setVariablesInNodes(this, flatify(recordToArray(this.constructor.__variables__)))
 		}

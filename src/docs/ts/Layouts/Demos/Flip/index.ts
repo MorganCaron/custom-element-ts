@@ -14,7 +14,7 @@ export class DemoFlip extends HTMLElement {
 	private m_flip: Flip = new Flip()
 	private m_grabbedElement: HTMLElement | null = null
 
-	init() {
+	connected() {
 		this.childNodes.forEach((node: Node) => {
 			if (node instanceof HTMLElement) {
 				const element = node as HTMLElement

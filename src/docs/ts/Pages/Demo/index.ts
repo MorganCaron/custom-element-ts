@@ -16,7 +16,7 @@ export class Demo extends HTMLElement {
 
 	demoFlipTs: string = ''
 
-	init() {
+	connected() {
 		this.demoFlipTs = DemoFlipTs
 		//Prism.highlightAllUnder(this)
 	}

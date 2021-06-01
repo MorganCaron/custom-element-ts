@@ -9,7 +9,7 @@ export class TiltedBlock extends HTMLHeadingElement {
 
 	baseContent: string = ''
 
-	init() {
+	connected() {
 		this.innerHTML = `<span>${this.baseContent}</span>`
 	}
 

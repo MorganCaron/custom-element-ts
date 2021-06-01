@@ -1,5 +1,5 @@
 {
-	"name": "three-elements",
+	"name": "@custom-element-ts/three",
 	"version": "1.0.0",
 	"description": "Custom Elements for ThreeJs",
 	"keywords": [
@@ -16,13 +16,23 @@
 	"author": "Morgan Caron",
 	"license": "ISC",
 	"devDependencies": {
-		"webpack-config-generator": "^1.0.18"
+		"nootstrap-ui": "^1.0.4",
+		"webpack-config-generator": "^1.1.1"
 	},
-	"dependencies": {
+	"peerDependencies": {
 		"@types/stats.js": "^0.17.0",
 		"@types/three": "^0.126.2",
-		"customelementts": "git+https://github.com/MorganCaron/CustomElementTs.git",
 		"stats.js": "^0.17.0",
 		"three": "^0.126.1"
-	}
+	},
+	"dependencies": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MorganCaron/CustomElementTs.git",
+		"directory": "packages/three"
+	},
+	"bugs": {
+		"url": "https://github.com/MorganCaron/CustomElementTs/issues"
+	},
+	"homepage": "https://github.com/MorganCaron/CustomElementTs/tree/main/packages/three#readme"
 }

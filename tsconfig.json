@@ -5,6 +5,13 @@
 		"experimentalDecorators": true,
 		"emitDecoratorMetadata": true,
 		"baseUrl": "src",
-		"outDir": "build"
+		"outDir": "build",
+		"rootDir": ".",
+		"paths": {
+			"@base/*": [
+				"./src/*",
+				"./src/ts/*"
+			]
+		}
 	}
 }

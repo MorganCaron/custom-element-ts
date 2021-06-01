@@ -1,3 +1,4 @@
+import 'nootstrap-ui'
 import { Component, Router, Flip } from 'ts/CustomElement'
 import { Home, Demo, Tutorial, Documentation } from './Pages'
 import './Layouts'
@@ -14,7 +15,7 @@ class App extends HTMLElement {
 	private m_flip: Flip = new Flip()
 	private m_oldFooterPosition: number = 0
 
-	init() {
+	connected() {
 		const router = this.querySelector('md-router') as Router
 		router.mode = 'hash';
 

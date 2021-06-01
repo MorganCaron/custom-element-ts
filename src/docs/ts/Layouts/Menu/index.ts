@@ -11,7 +11,7 @@ import css from '!!raw-loader!./style.css'
 })
 export class Menu extends HTMLElement {
 
-	init() {
+	connected() {
 		const router = document.querySelector('md-router') as Router
 		this.querySelectorAll('a').forEach(button => {
 			const href = button.getAttribute('href') || ''

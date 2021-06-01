@@ -12,7 +12,7 @@ export class Header extends HTMLElement {
 	@Attribute()
 	h1: string = ''
 
-	init() {
+	connected() {
 		this.h1 = '<CustomElement.ts/>'
 		const writerOptions: WriterOptions = {
 			interval: 100,
