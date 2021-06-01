@@ -17,7 +17,7 @@
 	"license": "ISC",
 	"devDependencies": {
 		"nootstrap-ui": "^1.0.4",
-		"webpack-config-generator": "^1.1.1"
+		"webpack-config-generator": "^1.2.0"
 	},
 	"peerDependencies": {
 		"@types/stats.js": "^0.17.0",

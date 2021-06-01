@@ -3,22 +3,56 @@ import '../ts/Three'
 import {
 	Scene,
 	PerspectiveCamera,
-	AxesHelper
+	ACESFilmicToneMapping,
+	sRGBEncoding,
+	PMREMGenerator,
+	UnsignedByteType
 } from 'three'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader'
 
 class App {
-
-	private context: Context = document.querySelector('three-context')
+	private context: Context
 	public scene: Scene
 	public camera: PerspectiveCamera
 
 	constructor() {
+		this.context = document.querySelector('three-context')
+		this.context.renderer.toneMapping = ACESFilmicToneMapping
+		this.context.renderer.toneMappingExposure = 1
+		this.context.renderer.outputEncoding = sRGBEncoding
+
 		this.camera = new PerspectiveCamera(75, this.context.aspectRatio)
 		this.camera.position.set(0.5, 0.5, 2)
 		this.scene = new Scene()
 		this.scene.add(this.camera)
-		this.scene.add(new AxesHelper())
 		this.context.renderer.render(this.scene, this.camera)
+
+		const controls = new OrbitControls(this.camera, this.context.renderer.domElement)
+		controls.target.set(0, 0, -0.2)
+		controls.update()
+
+		const pmremGenerator = new PMREMGenerator(this.context.renderer)
+		pmremGenerator.compileEquirectangularShader()
+
+		new RGBELoader()
+			.setDataType(UnsignedByteType)
+			.setPath('static/textures/equirectangular/')
+			.load('royal_esplanade_1k.hdr', (texture) => {
+				const envMap = pmremGenerator.fromEquirectangular(texture).texture
+				this.scene.background = envMap
+				this.scene.environment = envMap
+
+				texture.dispose()
+				pmremGenerator.dispose()
+
+				const loader = new GLTFLoader().setPath('static/models/gltf/DamagedHelmet/')
+				loader.load('DamagedHelmet.gltf', (gltf) => {
+					this.scene.add(gltf.scene)
+				})
+			})
+
 		this.context.onResizeCall(this.onResize.bind(this))
 		this.update()
 	}
