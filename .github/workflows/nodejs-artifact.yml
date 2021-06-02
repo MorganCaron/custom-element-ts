@@ -11,10 +11,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Install dependencies & Build
+    - name: Install & Build custom-element-ts
       run: |
         npm install
         npm run build --if-present
     - uses: JS-DevTools/npm-publish@v1
       with:
         token: ${{ secrets.NPM_TOKEN }}
+    - name: Install & Build @custom-element-ts/three
+      run: |
+        cd packages/three
+        npm install
+        npm run build --if-present
+    - uses: JS-DevTools/npm-publish@v1
+      with:
+        token: ${{ secrets.NPM_TOKEN }}
+        package: './packages/three/package.json'
+        access: public
