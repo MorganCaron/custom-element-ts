@@ -1,38 +1,34 @@
 {
-  "name": "@custom-element-ts/three",
-  "version": "1.0.0",
-  "description": "Custom Elements for ThreeJs",
-  "keywords": [
-    "threejs",
-    "3d",
-    "graphic"
-  ],
-  "main": "build/Three.min.js",
-  "types": "build/Three.d.ts",
-  "scripts": {
-    "dev": "webpack serve --open --mode development",
-    "build": "webpack --mode production"
-  },
-  "author": "Morgan Caron",
-  "license": "ISC",
-  "devDependencies": {
-    "nootstrap-ui": "^1.0.4",
-    "webpack-config-generator": "^1.2.0"
-  },
-  "peerDependencies": {
-    "@types/stats.js": "^0.17.0",
-    "@types/three": "^0.126.2",
-    "stats.js": "^0.17.0",
-    "three": "^0.126.1"
-  },
-  "dependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MorganCaron/CustomElementTs.git",
-    "directory": "packages/three"
-  },
-  "bugs": {
-    "url": "https://github.com/MorganCaron/CustomElementTs/issues"
-  },
-  "homepage": "https://github.com/MorganCaron/CustomElementTs/tree/main/packages/three#readme"
+	"name": "@custom-element-ts/three",
+	"version": "1.0.0",
+	"description": "Custom Elements for ThreeJs",
+	"keywords": [
+		"threejs",
+		"3d",
+		"graphic"
+	],
+	"main": "build/Three.min.js",
+	"types": "build/Three.d.ts",
+	"scripts": {
+		"dev": "webpack serve --open --mode development",
+		"build": "webpack --mode production"
+	},
+	"author": "Morgan Caron",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/three": "^0.129.1",
+		"nootstrap-ui": "^1.0.4",
+		"three": "^0.129.0",
+		"webpack-config-generator": "^1.2.0"
+	},
+	"dependencies": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MorganCaron/CustomElementTs.git",
+		"directory": "packages/three"
+	},
+	"bugs": {
+		"url": "https://github.com/MorganCaron/CustomElementTs/issues"
+	},
+	"homepage": "https://github.com/MorganCaron/CustomElementTs/tree/main/packages/three#readme"
 }
