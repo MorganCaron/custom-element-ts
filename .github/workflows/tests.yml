@@ -1,4 +1,4 @@
-name: NodeJS Test
+name: Tests
 
 on: [push, pull_request]
 
@@ -16,12 +16,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Install & Build custom-element-ts
+    - name: Build custom-element-ts
       run: |
         npm install
-        npm run build --if-present
-    - name: Install & Build @custom-element-ts/three
+        npm run build
+    - name: Build @custom-element-ts/three
       run: |
         cd packages/three
         npm install
-        npm run build --if-present
+        npm run build

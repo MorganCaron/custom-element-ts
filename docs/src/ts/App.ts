@@ -1,5 +1,5 @@
 import 'nootstrap-ui'
-import { Component, Router, Flip } from 'ts/CustomElement'
+import { Component, Router, Flip } from 'custom-element-ts'
 import { Home, Demo, Tutorial, Documentation } from './Pages'
 import './Layouts'
 

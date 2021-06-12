@@ -1,2 +1,8 @@
 node_modules/
-/build
+build/
+
+docs/node_modules/
+docs/build/
+
+packages/three/node_modules/
+packages/three/build/

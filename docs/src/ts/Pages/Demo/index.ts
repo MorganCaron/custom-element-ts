@@ -1,11 +1,11 @@
-import { Component } from 'ts/CustomElement'
-import 'docs/ts/Layouts'
+import { Component } from 'custom-element-ts'
+import 'ts/Layouts'
 
 import html from './index.html'
 import css from '!!raw-loader!./style.css'
 
 import * as Prism from 'prismjs'
-import DemoFlipTs from '!!raw-loader!docs/ts/Layouts/Demos/Flip/index.ts'
+import DemoFlipTs from '!!raw-loader!ts/Layouts/Demos/Flip/index.ts'
 
 @Component({
 	selector: 'page-demo',

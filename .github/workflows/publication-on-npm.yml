@@ -1,8 +1,8 @@
-name: NodeJS Artifact
+name: Publication on NPM
 
 on:
   push:
-    branches:    
+    branches:
       - master
 
 jobs:
@@ -11,18 +11,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Install & Build custom-element-ts
+    - name: Build custom-element-ts
       run: |
         npm install
-        npm run build --if-present
+        npm run build
     - uses: JS-DevTools/npm-publish@v1
       with:
         token: ${{ secrets.NPM_TOKEN }}
-    - name: Install & Build @custom-element-ts/three
+    - name: Build @custom-element-ts/three
       run: |
         cd packages/three
         npm install
-        npm run build --if-present
+        npm run build
     - uses: JS-DevTools/npm-publish@v1
       with:
         token: ${{ secrets.NPM_TOKEN }}

@@ -1,0 +1,33 @@
+{
+	"name": "docs",
+	"version": "1.0.0",
+	"description": "Documentation of CustomElementTs",
+	"scripts": {
+		"dev": "webpack serve --open --mode development",
+		"build": "webpack --mode production"
+	},
+	"keywords": [],
+	"author": "Morgan Caron",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/prismjs": "^1.16.5",
+		"@types/three": "^0.128.0",
+		"babel-plugin-prismjs": "^2.0.1",
+		"custom-element-ts": "^1.0.0",
+		"nootstrap-ui": "^1.0.5",
+		"prism-themes": "^1.7.0",
+		"prismjs": "^1.23.0",
+		"raw-loader": "^4.0.2",
+		"three": "^0.129.0",
+		"webpack-config-generator": "^1.3.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MorganCaron/Nootstrap.git"
+	},
+	"bugs": {
+		"url": "https://github.com/MorganCaron/Nootstrap/issues"
+	},
+	"homepage": "https://github.com/MorganCaron/Nootstrap#readme",
+	"dependencies": {}
+}

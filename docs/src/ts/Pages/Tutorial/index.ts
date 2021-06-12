@@ -1,11 +1,12 @@
-import { Component } from 'ts/CustomElement'
+import { Component } from 'custom-element-ts'
 
 import html from './index.html'
 import css from '!!raw-loader!./style.css'
 
 @Component({
-	selector: 'app-footer',
+	selector: 'page-tutorial',
 	template: html,
 	style: css
 })
-export class Footer extends HTMLElement { }
+export class Tutorial extends HTMLElement {
+}

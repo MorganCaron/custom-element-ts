@@ -1,4 +1,4 @@
-import { Component } from 'ts/CustomElement'
+import { Component } from 'custom-element-ts'
 
 @Component({
 	selector: 'tilted-block',

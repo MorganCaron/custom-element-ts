@@ -1,5 +1,5 @@
-import { Component, Attribute, Writer, WriterOptions } from 'ts/CustomElement'
-import 'docs/ts/Layouts'
+import { Component, Attribute, Writer, WriterOptions } from 'custom-element-ts'
+import 'ts/Layouts'
 
 import html from './index.html'
 

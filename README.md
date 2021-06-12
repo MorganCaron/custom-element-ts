@@ -10,7 +10,7 @@ CustomElementTs is a JavaScript/TypeScript library for the creation of **single-
 
 ### Project Health
 [![Codacy](https://img.shields.io/codacy/grade/eb93a6155891444bb965b73aff843b9c?logo=Codacy&style=for-the-badge)](https://www.codacy.com/manual/MorganCaron/CustomElementTs)
-[![Github Actions](https://img.shields.io/github/workflow/status/MorganCaron/CustomElementTs/NodeJS%20Deployment?logo=Github&style=for-the-badge)](https://github.com/MorganCaron/CustomElementTs/actions?query=workflow%3A%22NodeJS+Deployment%22)
+[![Github Actions](https://img.shields.io/github/workflow/status/MorganCaron/CustomElementTs/Documentation%20deployment?logo=Github&style=for-the-badge)](https://github.com/MorganCaron/CustomElementTs/actions?query=workflow%3A%22Documentation+deployment%22)
 
 ---
 

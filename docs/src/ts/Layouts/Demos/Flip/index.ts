@@ -1,5 +1,5 @@
-import { Component, Flip } from 'ts/CustomElement'
-import 'docs/ts/Layouts'
+import { Component, Flip } from 'custom-element-ts'
+import 'ts/Layouts'
 
 import html from './index.html'
 import css from '!!raw-loader!./style.css'

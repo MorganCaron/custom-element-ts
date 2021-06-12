@@ -1,7 +1,6 @@
-/.github
-/build
+.github/
 node_modules/
-/src/demo
-/src/static
-/src/docs
-/webpack.config.js
+tsconfig.json
+webpack.config.js
+
+docs/

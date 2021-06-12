@@ -8,8 +8,8 @@
 		"typescript-framework",
 		"custom-element"
 	],
-	"main": "build/CustomElementTs.min.js",
-	"types": "build/CustomElementTs.d.ts",
+	"main": "./build/CustomElement.min.js",
+	"types": "./build/CustomElement.d.ts",
 	"workspaces": [
 		"packages/*"
 	],
@@ -18,15 +18,11 @@
 		"build": "webpack --mode production"
 	},
 	"devDependencies": {
-		"@types/prismjs": "^1.16.5",
-		"@types/three": "^0.128.0",
-		"babel-plugin-prismjs": "^2.0.1",
-		"nootstrap-ui": "^1.0.4",
-		"prism-themes": "^1.6.0",
-		"prismjs": "^1.23.0",
-		"raw-loader": "^4.0.2",
-		"three": "^0.129.0",
-		"webpack-config-generator": "^1.2.0"
+		"@types/three": "^0.129.1",
+		"webpack-config-generator": "^1.3.1"
+	},
+	"peerDependencies": {
+		"three": "^0.129.0"
 	},
 	"author": "Morgan Caron",
 	"license": "ISC",
