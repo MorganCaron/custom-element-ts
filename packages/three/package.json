@@ -1,6 +1,6 @@
 {
 	"name": "@custom-element-ts/three",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Custom Elements for ThreeJs",
 	"keywords": [
 		"threejs",
@@ -25,7 +25,7 @@
 		"three": "^0.129.0"
 	},
 	"dependencies": {
-		"custom-element-ts": "^1.0.2"
+		"custom-element-ts": "^1.0.3"
 	},
 	"repository": {
 		"type": "git",
