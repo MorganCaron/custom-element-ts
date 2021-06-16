@@ -12,9 +12,9 @@ export default class Context extends HTMLElement {
 		antialias: true
 	})
 
-	public aspectRatio: number
+	public aspectRatio: number = 1
 
-	private resizeObserver: ResizeObserver
+	private resizeObserver: ResizeObserver = new ResizeObserver(elements => elements.forEach(element => this.onResize()))
 
 	private onResizeCallbacks: (() => void)[] = []
 
@@ -23,7 +23,6 @@ export default class Context extends HTMLElement {
 		this.renderer.shadowMap.enabled = true
 		this.renderer.autoClear = true
 		this.prepend(this.renderer.domElement)
-		this.resizeObserver = new ResizeObserver(elements => elements.forEach(element => this.onResize()))
 		this.resizeObserver.observe(this)
 	}
 

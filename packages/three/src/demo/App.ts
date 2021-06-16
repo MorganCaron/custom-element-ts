@@ -1,5 +1,5 @@
 import 'nootstrap-ui'
-import '../ts/Three'
+import { Context } from '../ts/Three'
 import {
 	Scene,
 	PerspectiveCamera,
@@ -18,7 +18,7 @@ class App {
 	public camera: PerspectiveCamera
 
 	constructor() {
-		this.context = document.querySelector('three-context')
+		this.context = document.querySelector('three-context') as Context
 		this.context.renderer.toneMapping = ACESFilmicToneMapping
 		this.context.renderer.toneMappingExposure = 1
 		this.context.renderer.outputEncoding = sRGBEncoding
