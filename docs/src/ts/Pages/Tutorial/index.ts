@@ -1,4 +1,4 @@
-import { Component } from 'custom-element-ts'
+import { Component } from 'custom-element-ts/src/ts/CustomElement'
 
 import html from './index.html'
 import css from '!!raw-loader!./style.css'
