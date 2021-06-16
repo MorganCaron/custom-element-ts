@@ -7,6 +7,7 @@ module.exports = (env, argv) => {
 		mode: argv.mode,
 		entry: {
 			CustomElement: ["./src/ts/CustomElement.ts"]
-		}
+		},
+		showErrors: true
 	});
 };

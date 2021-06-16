@@ -9,6 +9,7 @@ module.exports = (env, argv) => {
 			Three: ["./src/ts/Context.ts", "./src/ts/Three.ts"],
 			Demo: ["./src/demo/style.sass", "./src/demo/App.ts"]
 		},
-		index: "./src/demo/index.html"
+		index: "./src/demo/index.html",
+		showErrors: true
 	});
 };
