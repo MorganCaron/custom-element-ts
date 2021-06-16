@@ -9,7 +9,7 @@
 		"custom-element"
 	],
 	"main": "./build/CustomElement.min.js",
-	"types": "./build/CustomElement.d.ts",
+	"types": "./build/src/ts/CustomElement.d.ts",
 	"workspaces": [
 		"packages/*"
 	],
@@ -19,7 +19,7 @@
 	},
 	"devDependencies": {
 		"@types/three": "^0.129.1",
-		"webpack-config-generator": "^1.3.1"
+		"webpack-config-generator": "^1.3.2"
 	},
 	"peerDependencies": {
 		"three": "^0.129.0"
@@ -34,5 +34,7 @@
 		"url": "https://github.com/MorganCaron/CustomElementTs/issues"
 	},
 	"homepage": "https://github.com/MorganCaron/CustomElementTs#readme",
-	"dependencies": {}
+	"dependencies": {
+		"reflect-metadata": "^0.1.13"
+	}
 }

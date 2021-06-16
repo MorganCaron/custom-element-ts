@@ -1,4 +1,3 @@
-import 'reflect-metadata'
 import { findVariablesInHTMLElement, setVariablesInNodes } from './Template'
 import { Type, recordToArray, flatify } from './Utils'
 
