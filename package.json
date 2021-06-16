@@ -19,7 +19,8 @@
 	},
 	"devDependencies": {
 		"@types/three": "^0.129.1",
-		"webpack-config-generator": "^1.3.3"
+		"reflect-metadata": "^0.1.13",
+		"webpack-config-generator": "^1.4.0"
 	},
 	"peerDependencies": {
 		"three": "^0.129.0"
@@ -34,7 +35,5 @@
 		"url": "https://github.com/MorganCaron/CustomElementTs/issues"
 	},
 	"homepage": "https://github.com/MorganCaron/CustomElementTs#readme",
-	"dependencies": {
-		"reflect-metadata": "^0.1.13"
-	}
+	"dependencies": {}
 }

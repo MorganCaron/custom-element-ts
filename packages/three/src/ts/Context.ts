@@ -1,4 +1,4 @@
-import { Component } from '../../../../src/ts/CustomElement'
+import { Component } from 'custom-element-ts/src/ts/CustomElement'
 import { WebGLRenderer } from 'three'
 
 @Component({

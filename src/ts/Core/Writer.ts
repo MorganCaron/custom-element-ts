@@ -10,7 +10,7 @@ export enum EWagnerFischerEdition {
 }
 
 export type WagnerFischerResult = {
-	distance: number,
+	distance: number
 	editions: EWagnerFischerEdition[]
 }
 
@@ -69,9 +69,9 @@ export const wagnerFischer = (str0: string, str1: string, options: WagnerFischer
 }
 
 export type WriterOptions = {
-	duration?: number,
-	interval?: number,
-	replace: boolean,
+	duration?: number
+	interval?: number
+	replace: boolean
 	update: (newString: string) => void
 }
 
