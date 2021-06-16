@@ -17,6 +17,7 @@
 	"license": "ISC",
 	"devDependencies": {
 		"@types/three": "^0.129.1",
+		"custom-element-ts": "^1.0.3",
 		"nootstrap-ui": "^1.0.6",
 		"three": "^0.129.0",
 		"webpack-config-generator": "^1.4.0"
@@ -24,9 +25,7 @@
 	"peerDependencies": {
 		"three": "^0.129.0"
 	},
-	"dependencies": {
-		"custom-element-ts": "^1.0.3"
-	},
+	"dependencies": {},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/MorganCaron/CustomElementTs.git",
