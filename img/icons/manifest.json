@@ -1,7 +1,7 @@
 {
-  "name": "custom-element-ts",
-  "short_name": "custom-element-ts",
-  "description": "TypeScript framework designed to facilitate the creation of single-page web applications",
+  "name": "docs",
+  "short_name": "docs",
+  "description": "Documentation of CustomElementTs",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
