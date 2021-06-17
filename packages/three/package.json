@@ -1,6 +1,6 @@
 {
 	"name": "@custom-element-ts/three",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Custom Elements for ThreeJs",
 	"keywords": [
 		"threejs",
