@@ -1,5 +1,6 @@
 import 'nootstrap-ui'
-import { Context } from '../ts/Three'
+import '@custom-element-ts/three'
+import { Context } from '@custom-element-ts/three'
 import {
 	Scene,
 	PerspectiveCamera,

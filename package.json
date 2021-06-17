@@ -18,12 +18,8 @@
 		"build": "webpack --mode production"
 	},
 	"devDependencies": {
-		"@types/three": "^0.129.1",
 		"reflect-metadata": "^0.1.13",
 		"webpack-config-generator": "^1.4.0"
-	},
-	"peerDependencies": {
-		"three": "^0.129.0"
 	},
 	"author": "Morgan Caron",
 	"license": "ISC",

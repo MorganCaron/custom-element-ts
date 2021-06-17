@@ -6,7 +6,9 @@ module.exports = (env, argv) => {
 	return webpackConfigGenerator({
 		mode: argv.mode,
 		entry: {
-			Three: ["./src/ts/Three.ts"]
-		}
+			Docs: ["./src/ts/App.ts", "./src/sass/style.sass"]
+		},
+		index: "./src/index.html",
+		favicon: "./src/favicon.png"
 	});
 };

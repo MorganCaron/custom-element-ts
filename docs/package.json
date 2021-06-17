@@ -23,11 +23,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/MorganCaron/Nootstrap.git"
+		"url": "git+https://github.com/MorganCaron/CustomElementTs.git",
+		"directory": "docs"
 	},
 	"bugs": {
-		"url": "https://github.com/MorganCaron/Nootstrap/issues"
+		"url": "https://github.com/MorganCaron/CustomElementTs/issues"
 	},
-	"homepage": "https://github.com/MorganCaron/Nootstrap#readme",
+	"homepage": "https://github.com/MorganCaron/CustomElementTs#readme",
 	"dependencies": {}
 }

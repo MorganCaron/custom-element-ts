@@ -1,34 +1,26 @@
 {
-	"name": "@custom-element-ts/three",
-	"version": "1.0.3",
-	"description": "Custom Elements for ThreeJs",
-	"keywords": [
-		"threejs",
-		"3d",
-		"graphic"
-	],
-	"main": "build/Three.min.js",
-	"types": "build/src/ts/Three.d.ts",
+	"name": "docs",
+	"version": "1.0.0",
+	"description": "Documentation of CustomElementTs/Three",
 	"scripts": {
 		"dev": "webpack serve --open --mode development",
 		"build": "webpack --mode production"
 	},
+	"keywords": [],
 	"author": "Morgan Caron",
 	"license": "ISC",
 	"devDependencies": {
+		"@custom-element-ts/three": "^1.0.3",
 		"@types/three": "^0.129.1",
 		"custom-element-ts": "^1.0.3",
+		"nootstrap-ui": "^1.0.6",
 		"three": "^0.129.0",
 		"webpack-config-generator": "^1.4.0"
 	},
-	"peerDependencies": {
-		"three": "^0.129.0"
-	},
-	"dependencies": {},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/MorganCaron/CustomElementTs.git",
-		"directory": "packages/three"
+		"directory": "packages/three/docs"
 	},
 	"bugs": {
 		"url": "https://github.com/MorganCaron/CustomElementTs/issues"
