@@ -12,7 +12,7 @@
 	"devDependencies": {
 		"@custom-element-ts/three": "^1.0.3",
 		"@types/three": "^0.129.1",
-		"custom-element-ts": "^1.0.3",
+		"custom-element-ts": "^1.0.4",
 		"nootstrap-ui": "^1.0.6",
 		"three": "^0.129.0",
 		"webpack-config-generator": "^1.5.1"
