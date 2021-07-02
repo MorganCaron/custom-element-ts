@@ -9,6 +9,7 @@
 		"custom-element"
 	],
 	"main": "./build/CustomElement.min.js",
+	"module": "./build/CustomElement.min.js",
 	"types": "./build/src/ts/CustomElement.d.ts",
 	"workspaces": [
 		"packages/*"
@@ -18,8 +19,7 @@
 		"build": "webpack --mode production"
 	},
 	"devDependencies": {
-		"reflect-metadata": "^0.1.13",
-		"webpack-config-generator": "^1.4.0"
+		"webpack-config-generator": "^1.5.1"
 	},
 	"author": "Morgan Caron",
 	"license": "ISC",

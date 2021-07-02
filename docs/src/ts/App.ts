@@ -1,5 +1,5 @@
 import 'nootstrap-ui'
-import { Component, Router, Flip } from 'custom-element-ts/src/ts/CustomElement'
+import { Component, Router, Flip } from 'custom-element-ts'
 import { Home, Demo, Tutorial, Documentation } from './Pages'
 import './Layouts'
 
@@ -16,7 +16,7 @@ class App extends HTMLElement {
 	private m_oldFooterPosition: number = 0
 
 	connected() {
-		const router = this.querySelector('md-router') as Router
+		const router = this.querySelector('app-router') as Router
 		router.mode = 'hash';
 
 		router.beforePageChanging = () => {

@@ -8,7 +8,7 @@ interface ComponentRoute {
 }
 
 @Component({
-	selector: `md-router`
+	selector: `app-router`
 })
 class RouterComponent extends HTMLElement {
 

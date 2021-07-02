@@ -8,6 +8,7 @@
 		"graphic"
 	],
 	"main": "build/Three.min.js",
+	"module": "build/Three.min.js",
 	"types": "build/src/ts/Three.d.ts",
 	"scripts": {
 		"dev": "webpack serve --open --mode development",
@@ -19,7 +20,7 @@
 		"@types/three": "^0.129.1",
 		"custom-element-ts": "^1.0.3",
 		"three": "^0.129.0",
-		"webpack-config-generator": "^1.4.0"
+		"webpack-config-generator": "^1.5.1"
 	},
 	"peerDependencies": {
 		"three": "^0.129.0"

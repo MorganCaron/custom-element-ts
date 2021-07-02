@@ -1,4 +1,4 @@
-import { Component, Flip } from 'custom-element-ts/src/ts/CustomElement'
+import { Component, Flip } from 'custom-element-ts'
 import 'ts/Layouts'
 
 import html from './index.html'

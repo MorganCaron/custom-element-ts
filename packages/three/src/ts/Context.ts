@@ -1,11 +1,11 @@
-import { Component } from 'custom-element-ts/src/ts/CustomElement'
+import { Component } from 'custom-element-ts'
 import { WebGLRenderer } from 'three'
 
 @Component({
 	selector: 'three-context',
 	style: 'three-context { display: block; position: relative; width: 100%; height: 100%; overflow: hidden; } three-context > canvas { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }'
 })
-export default class Context extends HTMLElement {
+class Context extends HTMLElement {
 
 	public renderer: WebGLRenderer = new WebGLRenderer({
 		alpha: false,
@@ -37,3 +37,5 @@ export default class Context extends HTMLElement {
 		this.onResizeCallbacks.push(callback)
 	}
 }
+
+export { Context }

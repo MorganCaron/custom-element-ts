@@ -7,6 +7,12 @@ module.exports = (env, argv) => {
 		mode: argv.mode,
 		entry: {
 			Three: ["./src/ts/Three.ts"]
+		},
+		externals: {
+			three: "three"
+		},
+		exportLibrary: {
+			type: "module"
 		}
 	});
 };

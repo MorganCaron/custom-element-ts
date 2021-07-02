@@ -1,4 +1,4 @@
-import { Component, Router } from 'custom-element-ts/src/ts/CustomElement'
+import { Component, Router } from 'custom-element-ts'
 
 import html from './index.html'
 import css from '!!raw-loader!./style.css'
@@ -12,7 +12,7 @@ import css from '!!raw-loader!./style.css'
 export class Menu extends HTMLElement {
 
 	connected() {
-		const router = document.querySelector('md-router') as Router
+		const router = document.querySelector('app-router') as Router
 		this.querySelectorAll('a').forEach(button => {
 			const href = button.getAttribute('href') || ''
 			button.addEventListener("click", (event) => {
