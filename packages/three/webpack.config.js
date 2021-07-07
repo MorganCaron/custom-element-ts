@@ -9,7 +9,8 @@ module.exports = (env, argv) => {
 			Three: ["./src/ts/Three.ts"]
 		},
 		externals: {
-			three: "three"
+			"three": "three",
+			"custom-element-ts": "custom-element-ts"
 		},
 		exportLibrary: {
 			type: "module"
