@@ -10,7 +10,7 @@
 	"author": "Morgan Caron",
 	"license": "ISC",
 	"devDependencies": {
-		"@custom-element-ts/three": "^1.0.4",
+		"@custom-element-ts/three": "^1.0.5",
 		"@types/three": "^0.129.1",
 		"custom-element-ts": "^1.0.4",
 		"nootstrap-ui": "^1.0.6",
