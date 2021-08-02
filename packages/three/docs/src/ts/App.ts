@@ -1,4 +1,4 @@
-import 'nootstrap-ui'
+import Nootstrap from 'nootstrap-ui'
 import '@custom-element-ts/three'
 import { Context } from '@custom-element-ts/three'
 import {
@@ -71,4 +71,5 @@ class App {
 
 window.addEventListener('load', () => {
 	const app = new App()
+	const nootstrap = new Nootstrap()
 }, false)

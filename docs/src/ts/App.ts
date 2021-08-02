@@ -1,4 +1,4 @@
-import 'nootstrap-ui'
+import Nootstrap from 'nootstrap-ui'
 import { Component, Router, Flip } from 'custom-element-ts'
 import { Home, Demo, Tutorial, Documentation } from './Pages'
 import './Layouts'
@@ -44,6 +44,8 @@ class App extends HTMLElement {
 			{ path: 'documentation', component: Documentation }
 		).forEach(route => router.addRoute(route))
 		router.listen()
+
+		const nootstrap = new Nootstrap()
 	}
 
 }
