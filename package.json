@@ -1,6 +1,6 @@
 {
 	"name": "custom-element-ts",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "TypeScript framework designed to facilitate the creation of single-page web applications",
 	"keywords": [
 		"typescript",
