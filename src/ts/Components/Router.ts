@@ -53,4 +53,4 @@ class RouterComponent extends HTMLElement {
 
 }
 
-export { RouterComponent as Router, ComponentRoute as Route }
+export { RouterComponent, ComponentRoute }
