@@ -19,11 +19,11 @@
 	"devDependencies": {
 		"@types/three": "^0.129.1",
 		"custom-element-ts": "^1.0.4",
-		"three": "^0.129.0",
+		"three": "^0.139.0",
 		"webpack-config-generator": "^1.5.1"
 	},
 	"peerDependencies": {
-		"three": "^0.129.0"
+		"three": "^0.139.0"
 	},
 	"dependencies": {},
 	"repository": {
